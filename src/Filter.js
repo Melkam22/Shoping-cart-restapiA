@@ -6,10 +6,10 @@ class Filter extends Component {
       <div className="filter-heading">
         <div className="row">{this.props.count} products are available.</div>
         {/* we ll see the number of products at the top of our page */}
-        <div className="col-md-4">
+        <div className="sub-filterHeading">
           <label>
             {/* filter by price */}
-            Order by:
+            Order by Price:
             <select
               className="form-control"
               value={this.props.sort}
@@ -25,7 +25,7 @@ class Filter extends Component {
           <div className="col-md-4"></div>
           <label>
             {/* filter by id */}
-            Filter Size:
+            Filter by Size:
             <select
               className="form-control"
               value={this.props.size}

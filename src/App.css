@@ -60,3 +60,17 @@ button {
   flex-direction: column;
   margin-top: -55%;
 }
+.filter-heading {
+  width: 35%;
+  height: 100px;
+  margin-top: -83%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  border: 1px solid green;
+}
+.sub-filterHeading {
+  display: flex;
+  justify-content: space-evenly;
+}
