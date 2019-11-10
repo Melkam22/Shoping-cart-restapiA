@@ -1,8 +1,7 @@
 import React, { Component } from "react";
 import "./App.css";
-//import Body from "./components/Body";
 import Products from "./components/products";
-//import Basket from "./components/Basket";
+import Basket from "./components/Basket";
 
 class App extends Component {
   constructor(props) {
@@ -35,6 +34,10 @@ class App extends Component {
         <Products
           products={this.state.filteredProducts}
           handleAddToCart={this.handleAddToCart}
+        />
+        <Basket
+          cartItems={this.state.cartItems}
+          handleRemoveFromCart={this.handleRemoveFromCart}
         />
       </div>
     );

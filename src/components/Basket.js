@@ -1,4 +1,4 @@
-/* import React, { Component } from "react";
+import React, { Component } from "react";
 
 export default class Basket extends Component {
   render() {
@@ -10,7 +10,7 @@ export default class Basket extends Component {
         ) : (
           <div>you have {cartItems.length} products in the basket</div>
         )}
-        {/* to push list of products inside the basket  
+        {/* to push list of products inside the basket */}
 
         {cartItems.length > 0 && (
           <div>
@@ -18,7 +18,7 @@ export default class Basket extends Component {
               {cartItems.map(item => (
                 <li>
                   <b>{item.title}</b>×{item.count}
-                  {/* click on only 1 product amt increases, multiplies*
+                  {/* click on only 1 product amt increases, multiplies*/}
                   <button
                     className="delete-btn"
                     onClick={e => this.props.handleRemoveFromCart(e, item)}
@@ -33,4 +33,4 @@ export default class Basket extends Component {
       </div>
     );
   }
-} */
+}
