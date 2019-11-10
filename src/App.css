@@ -55,6 +55,7 @@ button {
 .basket {
   width: 20%;
   min-height: 5%;
+  padding-left: 5%;
   border: 1px solid green;
   display: flex;
   flex-direction: column;
