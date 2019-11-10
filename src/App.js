@@ -22,11 +22,11 @@ class App extends Component {
           filteredProducts: data
         })
       ); /* fetch the data from localstorage & change to javascript object, after basket function */
-    /* if (localStorage.getItem("cartItems")) {
+    if (localStorage.getItem("cartItems")) {
       this.setState({
         cartItems: JSON.parse(localStorage.getItem("cartItems"))
       });
-    } */
+    }
   }
   handleAddToCart = (e, product) => {
     this.setState(state => {
@@ -41,8 +41,8 @@ class App extends Component {
       if (!productAlreadyInCart) {
         cartItems.push({ ...product, count: 1 });
       }
-      /* localStorage.setItem("cartItems", JSON.stringify(cartItems));
-      return cartItems; */
+      localStorage.setItem("cartItems", JSON.stringify(cartItems));
+      return cartItems;
     });
   };
 
