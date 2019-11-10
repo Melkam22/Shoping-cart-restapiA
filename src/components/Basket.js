@@ -10,7 +10,7 @@ export default class Basket extends Component {
         ) : (
           <div>you have {cartItems.length} products in the basket</div>
         )}
-        {/* to push list of products inside the basket */}
+        {/* to push list of products inside the basket  */}
 
         {cartItems.length > 0 && (
           <div>

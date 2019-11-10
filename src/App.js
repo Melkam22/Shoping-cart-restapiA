@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import "./App.css";
 import Products from "./components/products";
 import Basket from "./components/Basket";
+import Filter from "./Filter";
 
 class App extends Component {
   constructor(props) {
@@ -27,7 +28,30 @@ class App extends Component {
       });
     } */
   }
-
+  handleAddToCart = (e, product) => {
+    this.setState(state => {
+      const cartItems = state.cartItems;
+      let productAlreadyInCart = false;
+      cartItems.forEach(item => {
+        if (item.id === product.id) {
+          productAlreadyInCart = true;
+          item.count++;
+        }
+      });
+      if (!productAlreadyInCart) {
+        cartItems.push({ ...product, count: 1 });
+      }
+      /* localStorage.setItem("cartItems", JSON.stringify(cartItems));
+      return cartItems; */
+    });
+  };
+  handleRemoveFromCart = (e, item) => {
+    this.setState(state => {
+      const cartItems = state.cartItems.filter(elem => elem.id !== item.id);
+      localStorage.setItem("cartItem", cartItems);
+      return { cartItems };
+    });
+  };
   render() {
     return (
       <div className="App">
@@ -39,6 +63,7 @@ class App extends Component {
           cartItems={this.state.cartItems}
           handleRemoveFromCart={this.handleRemoveFromCart}
         />
+        <Filter />
       </div>
     );
   }
