@@ -1,0 +1,112 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "sku": "shirt1.jpg",
+      "title": "T-shirt",
+      "description": "green",
+      "availableSizes": ["X", "L", "XL", "XXL"],
+      "price": 10,
+      "isFreeShipping": true
+    },
+    {
+      "id": 2,
+      "sku": "shirt2.jpeg",
+      "title": "Jacket",
+      "description": "blue",
+      "availableSizes": ["X", "M", "L"],
+      "price": 14.9,
+      "isFreeShipping": true
+    },
+    {
+      "id": 3,
+      "sku": "shirt3.png",
+      "title": "Trouser",
+      "description": "black",
+      "availableSizes": ["X", "M", "L"],
+      "price": 40,
+      "isFreeShipping": true
+    },
+    {
+      "id": 4,
+      "sku": "shirt4.png",
+      "title": "Pullover",
+      "description": "grey",
+      "availableSizes": ["X", "L", "XL", "XXL"],
+      "price": 30,
+      "isFreeShipping": true
+    },
+    {
+      "id": 5,
+      "sku": "shirt5.png",
+      "title": "raincoat",
+      "description": "white",
+      "availableSizes": ["M", "X", "XL", "XXL"],
+      "price": 35,
+      "isFreeShipping": true
+    },
+    {
+      "id": 6,
+      "sku": "shirt6.png",
+      "title": "skirt",
+      "description": "black",
+      "availableSizes": ["M", "X", "XL"],
+      "price": 25,
+      "isFreeShipping": true
+    },
+    {
+      "id": 7,
+      "sku": "shirt7.png",
+      "title": "hoodie",
+      "description": "light-green",
+      "availableSizes": ["M", "L", "XL", "XXL"],
+      "price": 55,
+      "isFreeShipping": true
+    },
+    {
+      "id": 8,
+      "sku": "shirt8.png",
+      "title": "ladies-trouser",
+      "description": "light-green",
+      "availableSizes": ["M", "L", "X", "XL"],
+      "price": 45,
+      "isFreeShipping": true
+    },
+    {
+      "id": 9,
+      "sku": "shirt9.png",
+      "title": "raincoat",
+      "description": "white",
+      "availableSizes": ["M", "X", "XL", "XXL"],
+      "price": 35,
+      "isFreeShipping": true
+    },
+    {
+      "id": 10,
+      "sku": "shirt10.jpg",
+      "title": "skirt",
+      "description": "black",
+      "availableSizes": ["M", "X", "XL"],
+      "price": 25,
+      "isFreeShipping": true
+    },
+    {
+      "id": 11,
+      "sku": "shirt11.jpg",
+      "title": "hoodie",
+      "description": "light-green",
+      "availableSizes": ["M", "L", "XL", "XXL"],
+      "price": 55,
+      "isFreeShipping": true
+    },
+    {
+      "id": 12,
+      "sku": "shirt12.png",
+      "title": "ladies-trouser",
+      "description": "light-green",
+      "availableSizes": ["M", "L", "X", "XL"],
+      "price": 45,
+      "isFreeShipping": true
+    }
+  ]
+}
